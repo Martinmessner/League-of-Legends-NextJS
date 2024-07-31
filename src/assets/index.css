@@ -1,0 +1,244 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* 
+ ESTE ES SOLO EL BACKGROUND: 
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #d1d1d1;
+  background-color: rgb(0, 0, 0);
+  scroll-behavior: smooth;
+  height: 100vh;
+  background:linear-gradient(45deg, #553679, #3c1f44, #332a5c);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+}
+*/
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #d1d1d1;
+  background-color: rgb(0, 0, 0);
+  scroll-behavior: smooth;
+  height: 84vh;
+  animation: gradientAnimation 10s ease infinite;
+  background-image: url("/mapa-lol.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+ 
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nick-principal {
+  color:  #d1d1d1;
+}
+
+button {
+  cursor: pointer;
+}
+
+button, input, select {
+  padding: 1em;
+  border-radius: 10px;
+  border: black 2px solid;
+  outline: 1px black solid ;
+}
+
+button:hover {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+.errors {
+  text-align: center;
+  font-size: 1.5em;
+  color:  #d1d1d1;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+/* ITEM CHAMPION */
+.item-champion {
+  width: 30px;
+  object-fit: contain;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+/*  TEAMS KILLS SECTION AND IMAGES ALL */
+.teamskills-section {
+  display: flex;
+  justify-content: space-around;
+  color:  #d1d1d1;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.image-baron, .image-drake {
+  display: flex;
+}
+.image-baron > img, .image-drake > img {
+  width: 30px;
+}
+.section-images-teamskill {
+  display: flex;
+  gap: .2em;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+/* CONTENEDOR - RANK USUARIO - NOMBRE DE SUMMONER - IMAGEN DEL ICONO - ETC */
+
+.summonername-main {
+display: flex;
+justify-content: space-evenly;
+margin: auto;
+max-width: 50em;
+text-align: center;
+}
+
+.summonername-div {
+ padding-top: 5em;
+}
+
+.profile-icon {
+  object-fit: contain;
+  width: 90px;
+  border-radius: 15px;
+}
+
+.contenedor-ranks {
+  display: flex;
+  gap: 4em;
+  align-items: center;
+}
+
+.small-wins-losses-wr {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagerank-lp-rank {
+  display: flex;
+    flex-direction: column;
+    padding: 3px 0px;
+    border-bottom: 1px solid;
+}
+
+/* CONTENEDOR - RANK USUARIO - NOMBRE DE SUMMONER - IMAGEN DEL ICONO - ETC */
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+
+/* CONTENEDOR - HEADER - DATA - GAME */
+
+.header-info-data-game {
+  gap: 3em;
+  display: flex;
+  justify-content: space-evenly;
+  color:  #d1d1d1;
+}
+
+.header {
+  text-align: center;
+}
+
+.header > form  {
+  padding: 1em;
+}
+
+/* CONTENEDOR - HEADER - DATA - GAME */
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+/* CONTENEDOR / LISTA DE USUARIOS - MATCHES- KDA - WIN O LOSE - ICON CHAMP - MAIN - ETC */
+
+.section-participants-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.div-participants-info-1,
+.div-participants-info-2 {
+  display: flex;
+  border-bottom: 2px solid black; /* Asegúrate de que ambos tengan el mismo borde */
+  align-items: center;
+ 
+}
+
+
+.champion-icon {
+  width: 65px;
+  border-radius: 35%;
+}
+
+.kda {
+  display: flex;
+}
+
+.participant-summonername {
+  padding: 0em 1em;
+  color: grey;
+}
+
+
+.div-win-o-lose {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* CONTENEDOR / LISTA DE USUARIOS - MATCHES- KDA - WIN O LOSE - ICON CHAMP - MAIN - ETC */
+
+.next-back-pages {
+  padding-top: 1.3em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.arrow-button {
+  font-size: 1.2em; /* Tamaño de la fuente */
+  color: black ;
+  background-color: #d1d1d1;
+  padding: 0em 2em;
+  border-radius: 50px;
+}
+
+.arrow-button:hover {
+  scale: 1.2;
+}
+
+.actual-page {
+  color:  #d1d1d1;
+  font-style: italic;
+  font-weight: bold;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+.champlevel-absolute {
+  position: relative;
+  font-size: 1em;
+  font-weight: bold
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+.image-timelines-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5em;
+}

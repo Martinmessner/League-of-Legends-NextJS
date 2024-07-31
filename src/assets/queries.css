@@ -1,0 +1,64 @@
+@media (max-width: 605px) {
+  .div-participants-info-1 {
+    flex-direction: column;
+  }
+  .no-selected-username {
+    text-align: center;
+  }
+  .info-aditional {
+    text-align: center;
+  }
+  .toogle-button {
+    display: flex;
+    margin: auto;
+  }
+  .test-image {
+    width: 80px;
+  }
+  .contenedor-ranks-article > p {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  .header-info-data-game {
+    display: block;
+    text-align: center;
+    font-size: 0.7em;
+    padding-top: 0.5em;
+  }
+  .contenedor-ranks {
+    gap: 1em;
+  }
+  .profile-icon {
+    width: 60px;
+  }
+  .summonername-div > p {
+    font-size: 0.9em;
+  }
+  :root {
+    height: 100vh;
+    background: linear-gradient(45deg, #553679, #3c1f44, #332a5c);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+}
+
+@media (min-width: 1060px) {
+  .div-participants-info-1,
+  .div-participants-info-2 {
+    padding: 0em 4em;
+  }
+}
+
+@media screen and (min-width: 328px) and (max-width: 393px) {
+  /* Tus estilos aquí */
+  .item-champion {
+    width: 33px;
+  }
+}
+
+@media screen and (min-width: 394px) and (max-width: 483px) {
+  /* Tus estilos aquí */
+  .item-champion {
+    width: 23px;
+  }
+}

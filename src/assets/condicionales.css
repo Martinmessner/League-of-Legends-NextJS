@@ -1,0 +1,36 @@
+.victoria {
+  background-color: #4a4a87;
+}
+
+.derrota {
+  background-color: #7c3a3a;
+}
+
+.win-color {
+  color: green;
+}
+
+.lose-color {
+  color: red;
+}
+
+.deaths-red {
+  color: #d40b0b;
+}
+
+.deaths-black {
+  color: black;
+}
+
+.colorunico {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.no-selected-username {
+  color: violet;
+}
+
+.list-items {
+  padding: 0.2em 0em;
+}

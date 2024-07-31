@@ -1,230 +1,540 @@
-.main {
+/* TODO EL INDEX, TODOS LO MAS IMPORTANTES */
+
+/* 
+ ESTE ES SOLO EL BACKGROUND: 
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #d1d1d1;
+  background-color: rgb(0, 0, 0);
+  scroll-behavior: smooth;
+  height: 100vh;
+  background:linear-gradient(45deg, #553679, #3c1f44, #332a5c);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+}
+*/
+
+.nick-principal {
+  color: #d1d1d1;
+}
+
+.errors {
+  text-align: center;
+  font-size: 1.5em;
+  color: #d1d1d1;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+/* ITEM CHAMPION */
+.item-champion {
+  width: 30px;
+  object-fit: contain;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+/*  TEAMS KILLS SECTION AND IMAGES ALL */
+.teamskills-section {
+  display: flex;
+  justify-content: space-around;
+  color: #d1d1d1;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.image-baron,
+.image-drake {
+  display: flex;
+}
+.image-baron > img,
+.image-drake > img {
+  width: 30px;
+}
+.section-images-teamskill {
+  display: flex;
+  gap: 0.2em;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+/* CONTENEDOR - RANK USUARIO - NOMBRE DE SUMMONER - IMAGEN DEL ICONO - ETC */
+
+.summonername-main {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  max-width: 50em;
+  text-align: center;
+}
+
+.summonername-div {
+  padding-top: 5em;
+}
+
+.profile-icon {
+  object-fit: contain;
+  width: 90px;
+  border-radius: 15px;
+}
+
+.contenedor-ranks {
+  display: flex;
+  gap: 4em;
+  align-items: center;
+}
+
+.small-wins-losses-wr {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+.imagerank-lp-rank {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 0px;
+  border-bottom: 1px solid;
+}
+
+/* CONTENEDOR - RANK USUARIO - NOMBRE DE SUMMONER - IMAGEN DEL ICONO - ETC */
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+/* CONTENEDOR - HEADER - DATA - GAME */
+
+.header-info-data-game {
+  gap: 3em;
+  display: flex;
+  justify-content: space-evenly;
+  color: #d1d1d1;
+}
+
+.header {
+  text-align: center;
+}
+
+/* CONTENEDOR - HEADER - DATA - GAME */
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+/* CONTENEDOR / LISTA DE USUARIOS - MATCHES- KDA - WIN O LOSE - ICON CHAMP - MAIN - ETC */
+
+.section-participants-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.div-participants-info-1,
+.div-participants-info-2 {
+  display: flex;
+  border-bottom: 2px solid black; /* Asegúrate de que ambos tengan el mismo borde */
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
 }
 
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+.champion-icon {
+  width: 65px;
+  border-radius: 35%;
 }
 
-.description a {
+.kda {
+  display: flex;
+}
+
+.participant-summonername {
+  padding: 0em 1em;
+  color: grey;
+}
+
+.div-win-o-lose {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* CONTENEDOR / LISTA DE USUARIOS - MATCHES- KDA - WIN O LOSE - ICON CHAMP - MAIN - ETC */
+
+.next-back-pages {
+  padding-top: 1.3em;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+  gap: 1em;
 }
 
-.description p {
+.arrow-button {
+  font-size: 1.2em; /* Tamaño de la fuente */
+  color: black;
+  background-color: #d1d1d1;
+  padding: 0em 2em;
+  border-radius: 50px;
+}
+
+.arrow-button:hover {
+  scale: 1.2;
+}
+
+.actual-page {
+  color: #d1d1d1;
+  font-style: italic;
+  font-weight: bold;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+.champlevel-absolute {
   position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+  font-size: 1em;
+  font-weight: bold;
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
+/* ------------------------------------------------------------------------------------------------------------------------ */
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
-}
-
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
-}
-
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
-}
-
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-}
-
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-  text-wrap: balance;
-}
-
-.center {
+.image-timelines-items {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
+  flex-wrap: wrap;
+  gap: 0.5em;
 }
 
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
+/* ACA LOS CONDICIONALES - IF - TERNARIOS - CSS - ESTILOS */
+
+.victoria {
+  background-color: #4a4a87;
 }
 
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
+.derrota {
+  background-color: #7c3a3a;
 }
 
-.center::before,
-.center::after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+.win-color {
+  color: green;
 }
 
-.logo {
-  position: relative;
+.lose-color {
+  color: red;
 }
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+
+.deaths-red {
+  color: #d40b0b;
+}
+
+.deaths-black {
+  color: black;
+}
+
+.colorunico {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.no-selected-username {
+  color: violet;
+}
+
+.list-items {
+  padding: 0.2em 0em;
+}
+/*  */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 605px) {
+  .div-participants-info-1 {
+    flex-direction: column;
   }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
+  .no-selected-username {
     text-align: center;
   }
-
-  .card {
-    padding: 1rem 2.5rem;
+  .info-aditional {
+    text-align: center;
   }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
+  .toogle-button {
     display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
+    margin: auto;
   }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
+  .test-image {
+    width: 80px;
   }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
+  .contenedor-ranks-article > p {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  .header-info-data-game {
+    display: block;
+    text-align: center;
+    font-size: 0.7em;
+    padding-top: 0.5em;
+  }
+  .contenedor-ranks {
+    gap: 1em;
+  }
+  .profile-icon {
+    width: 60px;
+  }
+  .summonername-div > p {
+    font-size: 0.9em;
   }
 }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
+@media (min-width: 1060px) {
+  .div-participants-info-1,
+  .div-participants-info-2 {
+    padding: 0em 4em;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+@media screen and (min-width: 328px) and (max-width: 393px) {
+  /* Tus estilos aquí */
+  .item-champion {
+    width: 33px;
   }
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
+@media screen and (min-width: 394px) and (max-width: 483px) {
+  /* Tus estilos aquí */
+  .item-champion {
+    width: 23px;
   }
-  to {
-    transform: rotate(0deg);
+}
+
+/* SEPARACION, ESTO ES EL LOADING DEL TIMER-LOADER  */
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.timer-loader {
+  width: 40px;
+  height: 26px;
+  --c: no-repeat linear-gradient(#ff0000 0 0);
+  background: var(--c) 0 100%, var(--c) 50% 100%, var(--c) 100% 100%;
+  background-size: 8px calc(100% - 4px);
+  position: relative;
+}
+.timer-loader:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #000000;
+  left: 0;
+  top: 0;
+  animation: l3-1 1.5s linear infinite alternate,
+    l3-2 0.75s cubic-bezier(0, 200, 0.8, 200) infinite;
+}
+@keyframes l3-1 {
+  100% {
+    left: calc(100% - 8px);
+  }
+}
+@keyframes l3-2 {
+  100% {
+    top: -0.1px;
+  }
+}
+
+.loader-eyes {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 10px;
+}
+.loader-eyes:before,
+.loader-eyes:after {
+  content: "";
+  height: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: -o-radial-gradient(farthest-side, #000 95%, #0000) 35% 35%/6px 6px
+    no-repeat #fff;
+  background: radial-gradient(farthest-side, #000 95%, #0000) 35% 35%/6px 6px
+    no-repeat #fff;
+  -webkit-animation: l5 3s infinite;
+  animation: l5 3s infinite;
+}
+@-webkit-keyframes l5 {
+  0%,
+  11% {
+    background-position: 35% 35%;
+  }
+  14%,
+  36% {
+    background-position: 65% 35%;
+  }
+  38%,
+  61% {
+    background-position: 65% 65%;
+  }
+  64%,
+  86% {
+    background-position: 35% 65%;
+  }
+  88%,
+  100% {
+    background-position: 35% 35%;
+  }
+}
+@keyframes l5 {
+  0%,
+  11% {
+    background-position: 35% 35%;
+  }
+  14%,
+  36% {
+    background-position: 65% 35%;
+  }
+  38%,
+  61% {
+    background-position: 65% 65%;
+  }
+  64%,
+  86% {
+    background-position: 35% 65%;
+  }
+  88%,
+  100% {
+    background-position: 35% 35%;
+  }
+}
+
+.center-eyes {
+  text-align: center;
+}
+
+.centertime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+.center-time-ranks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.loader-time {
+  --c1: #673b14;
+  --c2: #f8b13b;
+  width: 40px;
+  height: 80px;
+  border-top: 4px solid var(--c1);
+  border-bottom: 4px solid var(--c1);
+  background: -o-linear-gradient(
+      left,
+      var(--c1) 2px,
+      var(--c2) 0 5px,
+      var(--c1) 0
+    )
+    50%/7px 8px no-repeat;
+  background: linear-gradient(
+      90deg,
+      var(--c1) 2px,
+      var(--c2) 0 5px,
+      var(--c1) 0
+    )
+    50%/7px 8px no-repeat;
+  display: grid;
+  overflow: hidden;
+  -webkit-animation: l5-0 2s infinite linear;
+  animation: l5-0 2s infinite linear;
+}
+.loader-time::before,
+.loader-time::after {
+  content: "";
+  grid-area: 1/1;
+  width: 85%;
+  height: calc(50% - 4px);
+  margin: 0 auto;
+  border: 2px solid var(--c1);
+  border-top: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  border-radius: 0 0 40% 40%;
+  -webkit-mask: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #000)
+      )
+      bottom/4px 2px no-repeat,
+    -webkit-gradient(linear, left top, left bottom, color-stop(0, #000));
+  -webkit-mask: linear-gradient(#000 0 0) bottom/4px 2px no-repeat,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(var(--d, 0deg)),
+        color-stop(50%, var(--c2)),
+        color-stop(0, #0000)
+      )
+      bottom / 100% 205%,
+    -webkit-gradient(linear, left top, left bottom, color-stop(0, var(--c2))) center/0
+      100%;
+  background: -o-linear-gradient(var(--d, 0deg), var(--c2) 50%, #0000 0) bottom /
+      100% 205%,
+    -o-linear-gradient(var(--c2) 0 0) center/0 100%;
+  background: linear-gradient(var(--d, 0deg), var(--c2) 50%, #0000 0) bottom /
+      100% 205%,
+    linear-gradient(var(--c2) 0 0) center/0 100%;
+  background-repeat: no-repeat;
+  -webkit-animation: inherit;
+  animation: inherit;
+  -webkit-animation-name: l5-1;
+  animation-name: l5-1;
+}
+.loader-time::after {
+  -webkit-transform-origin: 50% calc(100% + 2px);
+  -ms-transform-origin: 50% calc(100% + 2px);
+  transform-origin: 50% calc(100% + 2px);
+  -webkit-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  transform: scaleY(-1);
+  --s: 3px;
+  --d: 180deg;
+}
+@-webkit-keyframes l5-0 {
+  80% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(0.5turn);
+    transform: rotate(0.5turn);
+  }
+}
+@keyframes l5-0 {
+  80% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(0.5turn);
+    transform: rotate(0.5turn);
+  }
+}
+@-webkit-keyframes l5-1 {
+  10%,
+  70% {
+    background-size: 100% 205%, var(--s, 0) 100%;
+  }
+  70%,
+  100% {
+    background-position: top, center;
+  }
+}
+@keyframes l5-1 {
+  10%,
+  70% {
+    background-size: 100% 205%, var(--s, 0) 100%;
+  }
+  70%,
+  100% {
+    background-position: top, center;
   }
 }
