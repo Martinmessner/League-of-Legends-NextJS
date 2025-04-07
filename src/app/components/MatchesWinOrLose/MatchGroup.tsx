@@ -15,6 +15,8 @@ export default function MatchGroup({
 }: MatchGroupProps) {
   const { summonerName: currentSummonerNames } = useSummonerStore();
 
+  console.log(currentSummonerNames);
+
   return (
     <section>
       {participants.map((participant: Participant) => {
@@ -22,6 +24,7 @@ export default function MatchGroup({
           puuid,
           champLevel,
           championName,
+          riotIdGameName,
           summonerName,
           participantId,
           kills,
@@ -35,9 +38,12 @@ export default function MatchGroup({
           wardsPlaced,
         } = participant;
 
+        console.log(participant);
+        console.log(riotIdGameName);
+
         const isSummonerNameIncluded =
           Array.isArray(currentSummonerNames) &&
-          currentSummonerNames.includes(summonerName);
+          currentSummonerNames.includes(riotIdGameName);
 
         return (
           <div
@@ -49,7 +55,10 @@ export default function MatchGroup({
               onToggle(participantId);
             }}
           >
-            <ImageChampionSummoner imageChampion={championName} />
+            <div className={styles["champion-container"]}>
+              <p className={styles["riotid-name"]}>{riotIdGameName}</p>
+              <ImageChampionSummoner imageChampion={championName} />
+            </div>
             <small className={styles["champlevel-absolute"]}>
               {champLevel}
             </small>

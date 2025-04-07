@@ -57,6 +57,9 @@
 
 /* CONTENEDOR - RANK USUARIO - NOMBRE DE SUMMONER - IMAGEN DEL ICONO - ETC */
 
+.champion-container {
+}
+
 .summonername-main {
   display: flex;
   justify-content: space-evenly;

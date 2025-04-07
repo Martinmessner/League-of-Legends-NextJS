@@ -15,6 +15,8 @@ export default function GetRankTierSummoner() {
 
   const [loading, setLoading] = useState(true);
 
+  console.log(summonerName);
+
   useEffect(() => {
     if (MatchGamesRenderAll) {
       const newRankSummonerId = MatchGamesRenderAll.flatMap(
