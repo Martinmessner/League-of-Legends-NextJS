@@ -15,8 +15,6 @@ export default function GetRankTierSummoner() {
 
   const [loading, setLoading] = useState(true);
 
-  console.log(summonerName);
-
   useEffect(() => {
     if (MatchGamesRenderAll) {
       const newRankSummonerId = MatchGamesRenderAll.flatMap(
@@ -35,7 +33,7 @@ export default function GetRankTierSummoner() {
   const fetchRankData = async (id: string) => {
     try {
       const data: RankData = await GetRankedImageUser4(id);
-      console.log(data);
+
       SetgetUserRankAndLP(data);
       setLoading(false);
     } catch (error) {
