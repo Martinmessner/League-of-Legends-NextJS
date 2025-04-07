@@ -15,7 +15,9 @@ const ImgItemsChampionsSummoners = ({ idItem }: { idItem: string }) => {
       src={hasError ? fallbackImage : itemChampion}
       alt="item"
       title={idItem}
-      onError={() => setHasError(true)}
+      onError={() => {
+        setHasError(true);
+      }}
     />
   );
 };
