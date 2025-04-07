@@ -15,8 +15,6 @@ export default function MatchGroup({
 }: MatchGroupProps) {
   const { summonerName: currentSummonerNames } = useSummonerStore();
 
-  console.log(currentSummonerNames);
-
   return (
     <section>
       {participants.map((participant: Participant) => {
@@ -37,9 +35,6 @@ export default function MatchGroup({
           wardsKilled,
           wardsPlaced,
         } = participant;
-
-        console.log(participant);
-        console.log(riotIdGameName);
 
         const isSummonerNameIncluded =
           Array.isArray(currentSummonerNames) &&
