@@ -51,12 +51,12 @@ export default function MatchGroup({
             }}
           >
             <div className={styles["champion-container"]}>
-              <p className={styles["riotid-name"]}>{riotIdGameName}</p>
+              <small className={styles["riotid-name"]}>{riotIdGameName}</small>
+              <small className={styles["champlevel-absolute"]}>
+                {champLevel}
+              </small>
               <ImageChampionSummoner imageChampion={championName} />
             </div>
-            <small className={styles["champlevel-absolute"]}>
-              {champLevel}
-            </small>
             <h4
               className={`${
                 isSummonerNameIncluded

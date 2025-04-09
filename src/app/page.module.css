@@ -29,6 +29,7 @@
 /* ITEM CHAMPION */
 .item-champion {
   width: 30px;
+  height: 30px;
   object-fit: contain;
 }
 /* ------------------------------------------------------------------------------------------------------------------------ */
@@ -58,6 +59,10 @@
 /* CONTENEDOR - RANK USUARIO - NOMBRE DE SUMMONER - IMAGEN DEL ICONO - ETC */
 
 .champion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .summonername-main {
@@ -182,6 +187,7 @@
   position: relative;
   font-size: 1em;
   font-weight: bold;
+  padding: 0.5em;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
