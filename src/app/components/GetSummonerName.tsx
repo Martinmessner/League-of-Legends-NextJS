@@ -55,6 +55,12 @@ export default function GetSummonerName() {
           type="text"
           placeholder="Invocador..."
         ></input>
+        <input
+          name="tagLine"
+          type="text"
+          placeholder="Tag (ej: LAN)"
+          required
+        />
         <SubmitButton />
       </form>
 
@@ -65,3 +71,47 @@ export default function GetSummonerName() {
     </>
   );
 }
+
+/*
+<form
+  className={`${styles.header}`}
+  action={async (formData) => {
+    "use server";
+
+    const { result, contentSelected, valueRegionSelected } =
+      await FormDataTest(formData);
+
+    setmodifyContinentSelected(contentSelected);
+    setSummonerName(result as SummonerData);
+    setselectedRegionWorld(valueRegionSelected);
+  }}
+>
+  <select name="regionWorld" required>
+    <option value="">Selecciona una región.</option>
+    {regionWorld.map((region) => {
+      const regionKey = Object.keys(region)[0];
+      return (
+        <option key={regionKey} value={regionKey}>
+          {regionKey}
+        </option>
+      );
+    })}
+  </select>
+
+  <input
+    name="gameName"
+    type="text"
+    placeholder="Nombre de invocador (ej: Juanito)"
+    required
+  />
+  <input
+    name="tagLine"
+    type="text"
+    placeholder="Tag (ej: LAN)"
+    defaultValue="LAN"
+    required
+  />
+
+  <SubmitButton />
+</form>
+ */
