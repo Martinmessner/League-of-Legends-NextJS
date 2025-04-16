@@ -9,6 +9,6 @@ export default async function GetRankedImageUser4(
   );
   console.log(selectedRegion);
   const result = await response.json();
-
+  console.log("test");
   return result;
 }
