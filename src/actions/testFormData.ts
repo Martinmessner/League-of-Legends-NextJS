@@ -37,6 +37,6 @@ export const FormDataTest = async (formData: FormData) => {
     `https://${contentSelected}.api.riotgames.com/riot/account/v1/accounts/by-riot-id/${summonerName}/${tagLine}?api_key=${process.env.NEXT_PUBLIC_API_KEY}`
   );
   const result = await response.json();
-  console.log(result);
+
   return { result, contentSelected, valueRegionSelected };
 };

@@ -34,6 +34,7 @@ export default function MatchGroup({
           visionWardsBoughtInGame,
           wardsKilled,
           wardsPlaced,
+          riotIdTagline,
         } = participant;
 
         const isSummonerNameIncluded =
@@ -51,10 +52,12 @@ export default function MatchGroup({
             }}
           >
             <div className={styles["champion-container"]}>
-              <small className={styles["riotid-name"]}>{riotIdGameName}</small>
+              <p className={styles["riotid-name"]}>{riotIdGameName}</p>
+              <small>Tag: {riotIdTagline}</small>
               <small className={styles["champlevel-absolute"]}>
                 {champLevel}
               </small>
+
               <ImageChampionSummoner imageChampion={championName} />
             </div>
             <h4

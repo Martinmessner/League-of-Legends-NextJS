@@ -9,6 +9,9 @@ export default async function MatchesIdDetailsGame(
   );
 
   const result = await response.json();
-
+  console.log(result);
   return result;
 }
+
+/*
+Poner el: riotIdTagline al lado del nombre del usuario:. */
