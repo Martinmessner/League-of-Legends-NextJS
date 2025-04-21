@@ -31,6 +31,12 @@ export default function RenderMatchInfoGames() {
       {MatchGamesRenderAll
         ? MatchGamesRenderAll.map((data) => {
             const { info } = data;
+
+            if (!info?.teams || !info?.participants) {
+              console.warn("Partida inválida o incompleta:", data);
+              return null;
+            }
+
             const { teams } = info;
 
             const {

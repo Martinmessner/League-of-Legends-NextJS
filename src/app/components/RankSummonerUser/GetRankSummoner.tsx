@@ -19,7 +19,7 @@ export default function GetRankTierSummoner() {
   useEffect(() => {
     if (MatchGamesRenderAll) {
       const newRankSummonerId = MatchGamesRenderAll.flatMap(
-        (data) => data.info.participants
+        (data) => data.info?.participants || []
       ).find(
         (data2) => data2.summonerName === summonerName.gameName
       )?.summonerId;

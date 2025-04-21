@@ -8,7 +8,6 @@ export default async function GetInfoUser2Fetch(
     `https://${selectedRegion}.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/${puuid}?api_key=${API_KEY}`
   );
 
-  console.log(selectedRegion);
   const result = await response.json();
   return result;
 }
