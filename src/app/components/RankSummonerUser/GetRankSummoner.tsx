@@ -11,6 +11,7 @@ export default function GetRankTierSummoner() {
     MatchGamesRenderAll,
     summonerName,
     SetrankSummonerId,
+    selectedRegion,
   } = useSummonerStore();
 
   const [loading, setLoading] = useState(true);
@@ -32,12 +33,12 @@ export default function GetRankTierSummoner() {
 
   const fetchRankData = async (id: string) => {
     try {
-      const data: RankData = await GetRankedImageUser4(id);
+      const data: RankData = await GetRankedImageUser4(id, selectedRegion);
 
       SetgetUserRankAndLP(data);
       setLoading(false);
     } catch (error) {
-      console.error("Error falopa: ", error);
+      console.error("Error: ", error);
     }
   };
 
